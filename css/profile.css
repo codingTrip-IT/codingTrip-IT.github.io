@@ -1,0 +1,24 @@
+@font-face {
+    font-family: '나눔스퀘어';
+    src: url(../font/NanumSquareR.woff);
+}
+
+body {
+    font-family: '나눔스퀘어';
+}
+
+.white-box{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 2px 1px #eee;
+}
+
+.hashtag {
+    display: inline-block;
+    border: 1px solid lightgray;
+    border-radius: 100px;
+    padding: 3px 12px 5px 12px;
+    margin-right: 2px;
+    margin-bottom: 5px;
+}
