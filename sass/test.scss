@@ -1,0 +1,63 @@
+//SCSS
+
+@import '_reset.scss'
+
+
+.list {
+    li:active {
+        background-color: blue;
+        color: white;
+    }
+}
+
+@mixin 기본디자인($색1,$색2) {
+    font-size: 16px;
+    padding: 10px;
+    background: $색2;
+    color: $색1;
+}
+
+.alert-green {
+    @include 기본디자인(green,yellowgreen);
+}
+.alert-blue {
+    @include 기본디자인(blue,skyblue);
+}
+.alert-yellow {
+    @include 기본디자인(orange,yellow);
+}
+
+@mixin 정리($숫자){
+    background: brown;
+    display: flex;
+    width:$숫자;
+}
+
+.col-6 {
+    @include 정리(50%);
+}
+
+.test-list {
+    li{
+        list-style: none;
+        padding: 10px;
+        border: 1px solid #eee;
+    }
+    .active{
+        background: skyblue;
+        color: white;
+    }
+}
+
+.alert-box-green {
+    padding: 10px;
+    padding-left: 20px;
+    background: green;
+    border-radius: 5px;
+}
+
+.alert-box-blue{
+    @extend .alert-box-green;
+    background: blue;
+    color: white;
+}
