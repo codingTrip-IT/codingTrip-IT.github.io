@@ -1,0 +1,5 @@
+@import '_reset.scss';
+.list li:active {
+  background-color: blue;
+  color: white;
+}
