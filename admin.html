@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="fa/css/all.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <title>Admin Page</title>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <ul class="list-group">
+            <li><i class="fas fa-home"></i> <span>Home</span></li>
+            <li><i class="fas fa-headphones"></i> <span>Services</span></li>
+            <li><i class="fas fa-flag"></i> <span>Alerts</span></li>
+            <li><i class="fas fa-chart-pie"></i> <span>Stats</span></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-light bg-light">
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2 searchbar" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" style="margin: -8px;"><i class="fas fa-search"></i></button>
+                </form>
+            </nav>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">
+                        <div class="nav-badge">
+                            <i class="fas fa-bell"></i>
+                            <a href="#" class="badge badge-danger">5</a>
+                        </div>
+                    </a>
+                    <a class="nav-item nav-link" href="#">
+                        <div class="nav-badge">
+                            <i class="fas fa-envelope"></i>
+                            <a href="#" class="badge badge-danger">5</a>
+                        </div>
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Minny Park</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <section class="container main-container">
+            <h4 class="my-4">Dashboard</h4>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card card-blue">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p class="card-text mb-2">Earnings (Monthly)</p>
+                                    <h5>$400,000</h5>
+                                </div>
+                                <i class="fas fa-calendar summary-icon align-self-center"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card card-blue">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p class="card-text mb-2">Earnings (Monthly)</p>
+                                    <h5>$400,000</h5>
+                                </div>
+                                <i class="fas fa-dollar-sign align-self-center"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card card-blue">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p class="card-text mb-2">Earnings (Monthly)</p>
+                                    <h5>$400,000</h5>
+                                </div>
+                                <i class="fas fa-tasks align-self-center"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card card-blue">
+                        <div class="card-body">
+                            <div class="media">
+                                <div class="media-body">
+                                    <p class="card-text mb-2">Earnings (Monthly)</p>
+                                    <h5>$400,000</h5>
+                                </div>
+                                <i class="fas fa-comments align-self-center"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <p>Earnings Overview</p>
+                    <div>
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+                <div class="col-md-4 card" style="width: 18rem;">
+                    <div class="card-header">
+                        Tasks
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                </div>
+            </div>
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+            //차트타입
+            type: 'bar',
+
+            //데이터
+            data: {
+                labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+                datasets: [{
+                    label: 'Montly',
+                    backgroundColor: 'blueviolet',
+                    borderColor: 'blueviolet',
+                    data: [0, 10, 5, 2, 20, 30, 45]
+                }]
+            },
+            options: {}
+        });
+
+    </script>
+</body>
+
+</html>
